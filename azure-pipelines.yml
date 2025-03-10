@@ -1,0 +1,10 @@
+# azure-pipelines.yml
+trigger:
+- main   # or master, depending on your default branch
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: echo "Hello from Azure Pipeline!"
+  displayName: 'Run a simple script'
